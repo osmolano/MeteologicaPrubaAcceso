@@ -1,0 +1,216 @@
+$custom-color: rgb(255, 79, 117);
+$custom-light-color: rgb(255, 159, 180);
+$custom-extra-light-color: rgb(253, 239, 242);
+$custom-dark-color: rgb(255, 44, 89);
+
+
+$nav-link-font-size: 18px;
+$nav-link-font-weight: bold;
+
+$navbar-light-color: #fff;
+$navbar-light-hover-color: #ffdcdc;
+$navbar-light-active-color: #fff;
+
+$offcanvas-color: rgb(255, 255, 255);
+
+$btn-close-color: $custom-color;
+
+$offcanvas-bg-color: $custom-color;
+
+$form-check-input-checked-bg-color: $custom-color;
+
+$form-check-input-focus-box-shadow: 0px 0px 0px 3px $custom-light-color;
+
+$popover-body-color: $custom-color;
+
+$popover-border-color: $custom-color;
+
+$popover-border-width: 2px;
+
+$box-shadow: 0 .5rem 1rem $custom-light-color;
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
+
+$custom-colors: (
+	"custom-color": $custom-color,
+    "custom-light-color": $custom-light-color,
+    "custom-extra-light-color": $custom-extra-light-color,
+    "custom-dark-color": $custom-dark-color
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+.nav-home-icon{
+    color: $white!important;
+}
+
+.nav-home-icon:hover{
+    color: #ffdcdc!important;
+    transform: scale(1.25);
+}
+
+.search-weather-input-container{
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+
+.search-weather-input{
+    width: 100%;
+    height: 100%;
+    border: 4px solid $custom-color;
+    padding-left: 15px;
+    padding-right: 20%;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+    box-shadow: 4px 4px 5px 3px $custom-light-color;
+    outline: none;
+    border-radius: 27px;
+}
+
+.search-weather-input-button {
+    position: absolute;
+    color: $white;
+    right: 0%;
+    width: 17.5%;
+    height: 100%;
+    border-radius: 0px 27px 27px 0px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: $custom-color;
+}
+
+.search-weather-input-container:hover .search-weather-input{
+    box-shadow: 6px 6px 8px 6px $custom-light-color;
+   
+}
+
+.search-weather-input-button:hover {
+    background-color: rgba(255, 79, 117, 0.9);
+}
+
+.search-weather-input-button:hover{
+    color: whitesmoke;
+}
+
+.error-icon {
+    font-size: 100px;
+}
+
+.btn-outline-custom-color{
+    border-width: 2px;
+}
+
+.btn-outline-custom-color:hover{
+    color: $white;
+}
+
+.btn-outline-custom-color:active{
+    color: $white!important;
+}
+
+.popover{
+    font-weight: bold!important;
+}
+
+.custom-card{
+    position: relative;
+    width: 235px;
+    height: 425px;
+    margin-bottom: 40px;
+    padding: 5px;
+    box-shadow: 3px 3px 4px 6px $custom-light-color;
+    border: 4px solid $custom-color;
+    border-radius: 20px;
+    background-color: $custom-extra-light-color;
+    cursor: pointer;
+}
+
+.custom-card:hover{
+    box-shadow: 6px 6px 8px 10px $custom-light-color;
+}
+
+.custom-card-header{
+    position: absolute;
+    width: 100%;
+    height: 12.5%;
+    top: 0%;
+    left: 0%;
+    background-color: $custom-color;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.custom-card-footer{
+    position: absolute;
+    width: 100%;
+    height: 12.5%;
+    bottom: 0%;
+    left: 0%;
+    background-color: $custom-color;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.custom-btn-unstyled{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.custom-card-footer-icon {
+    border: 3px solid $white;
+    margin-top: 5px;
+    font-size: 22px;
+    padding: 5px;
+    color: $white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom-card-footer-icon:hover{
+    border-color: $custom-light-color;
+    color: $custom-light-color;
+}
+
+.custom-card-body{
+    padding-top: 60px;
+}
+
+.custom-card-body-canvas{
+    width: 95%; 
+    height: 200px;
+    max-height: 200px;
+    margin-bottom: 25px;
+}
+
+.custom-card-body-icon{
+    margin-top: 25px;
+    width: 85%;
+    height: 165px;
+    max-height: 165px;
+    color: $custom-light-color;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: $custom-dark-color;
+}
+
+.text-custom-shadow{
+    text-shadow: 4px 4px 4px $custom-light-color;
+}
+
+@media (min-width: 768px) and (min-height: 768px){
+    .container{
+        height: 100vh;
+    }
+}

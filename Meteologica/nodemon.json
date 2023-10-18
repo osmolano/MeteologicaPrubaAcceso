@@ -1,0 +1,7 @@
+{
+    "watch": ["BackEnd/**", "FrontEnd/src/views/**"],
+    "ext": "js, ejs",
+    "execMap": {
+      "js": "node --harmony"
+    }
+  }
